@@ -40,7 +40,7 @@ public class ManagerProductTest {
         manager.save(book1);
         manager.save(smartphone3);
 
-        Product[] actual = manager.searchByName("Name6");
+        Product[] actual = manager.searchByName("Sma6");
         Product[] expected = {smartphone3};
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -49,7 +49,7 @@ public class ManagerProductTest {
         ManagerProduct manager = new ManagerProduct();
         manager.save(smartphone3);
 
-        Product[] actual = manager.searchByName("Name6");
+        Product[] actual = manager.searchByName("Sma6");
         Product[] expected = {smartphone3};
         Assertions.assertArrayEquals(expected, actual);
     }
